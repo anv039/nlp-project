@@ -1,0 +1,4 @@
+Model,Key Hyperparameter,Class Weight,Max Features,ngram_range
+Naive Bayes,alpha=0.5,None,5000 (TF-IDF),"(1,2)"
+SVM,C=1.0,balanced,5000 (TF-IDF),"(1,2)"
+Logistic Regression,C=1.0,balanced,5000 (TF-IDF),"(1,2)"
