@@ -1,0 +1,52 @@
+[
+  {
+    "intent": "nlp_concepts_tokenization",
+    "patterns": ["what is tokenization", "explain tokenization", "text tokenization"],
+    "responses": ["Tokenization splits text into words, sentences, or subwords. NLTK uses word_tokenize() and sent_tokenize()."]
+  },
+  {
+    "intent": "nlp_concepts_stemming",
+    "patterns": ["what is stemming", "stemming vs lemmatization", "explain stemming"],
+    "responses": ["Stemming reduces words to root form (e.g., 'running' → 'run'). PorterStemmer is commonly used in NLTK."]
+  },
+  {
+    "intent": "nlp_concepts_tfidf",
+    "patterns": ["what is tf-idf", "tfidf vectorizer", "term frequency"],
+    "responses": ["TF-IDF converts text to numerical vectors based on word importance. It's used in this chatbot for intent matching!"]
+  },
+  {
+    "intent": "ai_applications_qa",
+    "patterns": ["question answering", "qa systems", "question answering systems"],
+    "responses": ["Question Answering systems like BERT can extract answers from documents. They're used in customer support and search engines."]
+  },
+  {
+    "intent": "nlp_tools_spacy",
+    "patterns": ["what is spacy", "spacy vs nltk", "spacy library"],
+    "responses": ["spaCy is an industrial-strength NLP library. It's faster than NLTK and includes pre-trained models for NER, POS, and dependency parsing."]
+  },
+  {
+    "intent": "nlp_tools_nltk",
+    "patterns": ["what is nltk", "natural language toolkit", "nltk library"],
+    "responses": ["NLTK (Natural Language Toolkit) is an academic NLP library with many resources for teaching and research."]
+  },
+  {
+    "intent": "sentiment_analysis_applications",
+    "patterns": ["sentiment analysis uses", "sentiment analysis applications", "where is sentiment analysis used"],
+    "responses": ["Sentiment analysis is used in stock market prediction, product reviews, social media monitoring, and customer feedback analysis."]
+  },
+  {
+    "intent": "chatbot_types",
+    "patterns": ["types of chatbots", "rule-based vs ai chatbots", "chatbot categories"],
+    "responses": ["Chatbots can be rule-based (using if-else), retrieval-based (using similarity like this demo), or generative (using LLMs like GPT)."]
+  },
+  {
+    "intent": "ask_name",
+    "patterns": ["what is your name", "who are you", "your name"],
+    "responses": ["I'm an NLP Chatbot Demo! I can answer questions about NLP concepts and AI applications."]
+  },
+  {
+    "intent": "ask_capabilities",
+    "patterns": ["what can you do", "your capabilities", "help"],
+    "responses": ["I can answer questions about NLP concepts (NER, POS, sentiment), AI applications, and chatbot technologies. Try asking 'What is NER?' or 'Tell me about AI in chatbots'!"]
+  }
+]
