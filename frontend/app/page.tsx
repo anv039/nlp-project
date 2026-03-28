@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import Q3NER from './components/Q3NER';
 import Q4Chatbot from './components/Q4Chatbot';
+import Q1 from './components/Q1';
+import Q2 from './components/Q2';
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<'q1' | 'q2' | 'q3' | 'q4'>('q3');
@@ -29,23 +31,23 @@ export default function Home() {
               onClick={() => setActiveTab('q1')}
               className={`
                 py-4 px-1 border-b-2 font-medium text-sm
-                ${activeTab === 'q3'
+                ${activeTab === 'q1'
                   ? 'border-blue-500 text-blue-600'
                   : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}
               `}
             >
-             Q1: 
+             Q1: Sentiment
             </button>
             <button
               onClick={() => setActiveTab('q2')}
               className={`
                 py-4 px-1 border-b-2 font-medium text-sm
-                ${activeTab === 'q3'
+                ${activeTab === 'q2'
                   ? 'border-blue-500 text-blue-600'
                   : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}
               `}
             >
-             Q2:
+             Q2: Embeddings
             </button>
             <button
               onClick={() => setActiveTab('q3')}
@@ -74,8 +76,8 @@ export default function Home() {
 
         {/* Tab Content */}
         <div className="mt-8">
-          {activeTab === 'q1' && <Q3NER />}
-          {activeTab === 'q2' && <Q3NER />}
+          {activeTab === 'q1' && <Q1 />}
+          {activeTab === 'q2' && <Q2 />}
           {activeTab === 'q3' && <Q3NER />}
           {activeTab === 'q4' && <Q4Chatbot />}
         </div>
